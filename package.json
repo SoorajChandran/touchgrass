@@ -1,0 +1,26 @@
+{
+  "name": "touchgrass",
+  "version": "1.0.0",
+  "description": "Touch grass from your terminal. A playful CLI that plays ASCII animations of touching grass.",
+  "bin": {
+    "touchgrass": "./bin/touchgrass.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "cli",
+    "grass",
+    "terminal",
+    "ascii",
+    "animation",
+    "fun",
+    "break",
+    "meditation"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin",
+    "lib"
+  ]
+}
