@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>touchgrass</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      color: #a0a0a0;
+      font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Menlo', 'Consolas', monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .terminal {
+      background: #1a1a1a;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 640px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .titlebar {
+      background: #2a2a2a;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot-red { background: #ff5f57; }
+    .dot-yellow { background: #ffbd2e; }
+    .dot-green { background: #28c840; }
+
+    .titlebar-text {
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      margin-right: 56px;
+    }
+
+    .body {
+      padding: 24px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .prompt { color: #28c840; }
+    .command { color: #e0e0e0; }
+    .dim { color: #555; }
+    .green { color: #28c840; }
+    .white { color: #e0e0e0; }
+    .yellow { color: #ffbd2e; }
+
+    .ascii-title {
+      color: #28c840;
+      line-height: 1.2;
+      margin: 0 0 12px 0;
+      font-size: 14px;
+    }
+
+    .tagline {
+      color: #808080;
+      margin: 8px 0 20px 0;
+      font-style: italic;
+    }
+
+    .block { margin-bottom: 20px; }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 16px;
+      background: #28c840;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    a {
+      color: #6ab0f3;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    .scene-list {
+      margin: 4px 0 0 20px;
+      list-style: none;
+    }
+    .scene-list li::before {
+      content: '- ';
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="titlebar">
+      <div class="dot dot-red"></div>
+      <div class="dot dot-yellow"></div>
+      <div class="dot dot-green"></div>
+      <div class="titlebar-text">touchgrass</div>
+    </div>
+    <div class="body">
+
+      <div class="block">
+        <pre class="ascii-title"> _                   _
+| |_ ___  _   _  ___| |__
+| __/ _ \| | | |/ __| '_ \
+| || (_) | |_| | (__| | | |
+ \__\___/ \__,_|\___|_| |_|
+  __ _ _ __ __ _ ___ ___
+ / _` | '__/ _` / __/ __|
+| (_| | | | (_| \__ \__ \
+ \__, |_|  \__,_|___/___/
+ |___/</pre>
+        <div class="tagline">A terminal escape for the terminally online.</div>
+      </div>
+
+      <div class="block">
+        <span class="prompt">$</span> <span class="command">npx @soorajchandran/touchgrass</span>
+      </div>
+
+      <div class="block">
+        <span class="dim"># install globally</span><br>
+        <span class="prompt">$</span> <span class="command">npm install -g @soorajchandran/touchgrass</span><br>
+        <span class="prompt">$</span> <span class="command">touchgrass</span>
+      </div>
+
+      <div class="block">
+        <span class="dim"># guided breathing</span><br>
+        <span class="prompt">$</span> <span class="command">touchgrass breathe</span>
+      </div>
+
+      <div class="block">
+        <span class="white">Scenes</span><br>
+        <ul class="scene-list">
+          <li>A quiet park</li>
+          <li>A mountain trail</li>
+          <li>A zen garden</li>
+          <li>A Norwegian fjord</li>
+          <li>A tropical beach</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <span class="dim">Press <span class="yellow">→</span> to step through each phase at your own pace.</span>
+      </div>
+
+      <div class="block">
+        <span class="dim">Zero dependencies. Just vibes.</span><br>
+        <span class="dim"><a href="https://github.com/soorajchandran/touchgrass">github.com/soorajchandran/touchgrass</a></span>
+      </div>
+
+      <div>
+        <span class="prompt">$</span> <span class="cursor"></span>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
