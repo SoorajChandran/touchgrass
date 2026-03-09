@@ -1,6 +1,16 @@
 # touchgrass
 
-For the terminaly online people to touch grass...
+```
+            ☀
+                          ~
+       🌳    🌳    🌳
+        |     |     |
+     🌱 🌱 🌱 🌱 🌱 🌱 🌱
+```
+
+A terminal escape for the terminally online.
+
+Step outside. Touch grass. Come back refreshed.
 
 ## Install
 
@@ -8,30 +18,30 @@ For the terminaly online people to touch grass...
 npm install -g @soorajchandran/touchgrass
 ```
 
-## Usage
-
-```bash
-# Run a random grass-touching animation
-touchgrass
-
-# Run a breathing meditation
-touchgrass breathe
-```
-
-## What happens
-
-You'll get one of three animations:
-
-- **Your Local Park**
-- **Swiss Alps**
-- **Japanese Garden** 
-
-
-## Run without installing
+Or run without installing:
 
 ```bash
 npx @soorajchandran/touchgrass
 ```
+
+## Usage
+
+```bash
+touchgrass           # play a random scene
+touchgrass breathe   # guided breathing meditation
+```
+
+## Scenes
+
+Each run picks one of five places to visit:
+
+- A quiet **park**
+- A **mountain** trail
+- A zen **garden**
+- A Norwegian **fjord**
+- A tropical **beach**
+
+Press **→**, **Enter**, or **Space** to step through each phase at your own pace.
 
 ## License
 
