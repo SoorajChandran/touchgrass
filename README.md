@@ -5,7 +5,7 @@ For the terminaly online people to touch grass...
 ## Install
 
 ```bash
-npm install -g go-touch-grass
+npm install -g @soorajchandran/touchgrass
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ You'll get one of three animations:
 ## Run without installing
 
 ```bash
-npx go-touch-grass
+npx @soorajchandran/touchgrass
 ```
 
 ## License
