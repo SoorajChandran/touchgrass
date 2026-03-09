@@ -1,5 +1,5 @@
 {
-  "name": "touchgrass",
+  "name": "go-touch-grass",
   "version": "1.0.0",
   "description": "Touch grass from your terminal. A playful CLI that plays ASCII animations of touching grass.",
   "bin": {
