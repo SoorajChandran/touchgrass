@@ -1,6 +1,6 @@
 {
   "name": "@soorajchandran/touchgrass",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Touch grass from your terminal. A playful CLI that plays ASCII animations of touching grass.",
   "author": "Sooraj Chandran",
   "license": "MIT",
